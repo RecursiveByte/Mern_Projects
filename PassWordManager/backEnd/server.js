@@ -14,7 +14,7 @@ app.use(cors())
 dotenv.config()
 
 // Connection URL
-const url = 'mongodb+srv://Joyboy:kNhyZMPw6oD4q2Kp@cluster0.tzjeg.mongodb.net/keyGuardian?retryWrites=true&w=majority';
+const url = 'mongodb+srv://Joyboy:kNhyZMPw6oD4q2Kp@cluster0.tzjeg.mongodb.net/keyGuardian?retryWrites=true&w=majority&tls=true';
 const client = new MongoClient(url);
 
 client.connect().then(()=>console.log("connected"));
