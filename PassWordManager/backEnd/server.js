@@ -14,7 +14,7 @@ app.use(cors())
 dotenv.config()
 
 // Connection URL
-const url = 'mongodb://localhost:27017';
+const url = 'mongodb+srv://opboy4885:<db_password>@cluster0.tzjeg.mongodb.net/';
 const client = new MongoClient(url);
 
 client.connect().then(()=>console.log("connected"));
