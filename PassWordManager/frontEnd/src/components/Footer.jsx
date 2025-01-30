@@ -8,7 +8,7 @@ const Footer = ({ formArray, handleEdit, getFunc }) => {
         let value = confirm("Do you  really want to delete")
 
         if (value) {
-            let res = await fetch("http://localhost:3000/", {
+            let res = await fetch("https://fullstackprojects-backend0.onrender.com", {
                 method: "DELETE",
                 headers: {
                     "Content-Type": "application/json",
