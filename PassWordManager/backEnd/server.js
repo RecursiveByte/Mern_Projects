@@ -32,6 +32,7 @@ async function connectToDB() {
   }
 }
 
+connectToDB()
 
 // Database Name
 const dbName = 'keyGuardian';
