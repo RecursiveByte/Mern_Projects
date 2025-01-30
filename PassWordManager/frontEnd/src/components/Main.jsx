@@ -10,9 +10,9 @@ const Main = () => {
 
   const url = "https://fullstackprojects-backend0.onrender.com"
 
-   const close = "./images/close.png"
-   const open = "./images/open.png"
-  
+  const close = "./images/close.png"
+  const open = "./images/open.png"
+
   function showPass() {
     console.log("showpass clicked")
     console.log(showRef.current.src)
@@ -21,7 +21,6 @@ const Main = () => {
       showRef.current.src = close
       passRef.current.type = "password"
       showRef.current.alt = "hide"
-      
     }
     else {
 
@@ -73,29 +72,33 @@ const Main = () => {
           <input onChange={handleChange} value={form.site} required name="site" className="bg-white w-[80%]  rounded-xl mx-auto border-2 border-blue-600 block" type="text" placeholder='enter the website name here' />
 
           <div className=' w-[80%] mx-auto mt-10 flex justify-between'>
+            <div className='w-[60%]'>
             <input onChange={handleChange} value={form.username} required
               maxLength={16} minLength={4}
 
               pattern="^(?=.*\d)(?=.*[@$!%*?&#])[A-Za-z\d@$!%*?&#]{4,}$"
               title="Username must be at least 4 characters long and include at least one number and one symbol."
-              name="username" className="w-[60%] rounded-xl border-2 bg-white border-blue-600 block" type="text"
+              name="username" className="w-[100%] rounded-xl border-2 bg-white border-blue-600 block" type="text"
               placeholder='enter the username' />
+            </div>
 
 
+            <div className='w-[35%] flex'>
             <input onChange={handleChange} value={form.password} required name="password"
               maxLength={16} minLength={4}
               ref={passRef}
               pattern="^(?=.*\d)(?=.*[@$!%*?&#])[A-Za-z\d@$!%*?&#]{4,}$"
               title="Password must be at least 4 characters long and include at least one 
             number and one symbol."
-              className="w-[30%] relative right-0 rounded-xl border-2 bg-white border-blue-600 block" type="password"
+              className="w-[100%] relative right-0 rounded-xl border-2 bg-white border-blue-600 block" type="password"
               placeholder='enter the password' />
 
 
-            <span onClick={showPass} className='absolute right-40 w-[20px] top-55'><img
+            <span onClick={showPass} className='bg-white w-[20px] flex justify-center items-center'><img className='w-[20px]'
               ref={showRef}
-              src={close}></img>
+              src={close} alt="hide"></img>
             </span>
+            </div>
           </div>
 
 
