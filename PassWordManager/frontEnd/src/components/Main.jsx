@@ -1,8 +1,6 @@
 import React from 'react'
 import { useState, useEffect, useRef } from 'react'
 import Footer from './Footer'
-import close from "./images/close.png"
-import open from "./images/open.png"  
 
 const Main = () => {
   const [form, setForm] = useState({ site: "", username: "", password: "" })
@@ -12,6 +10,9 @@ const Main = () => {
 
   const url = "https://fullstackprojects-backend0.onrender.com"
 
+   const close = "./src/images/close.png"
+   const open = "./src/images/open.png"
+
   function showPass() {
     console.log("showpass clicked")
     console.log(showRef.current.src)
@@ -19,11 +20,14 @@ const Main = () => {
 
       showRef.current.src = close
       passRef.current.type = "password"
+      showRef.current.alt = "hide"
+      
     }
     else {
 
       showRef.current.src = open
       passRef.current.type = "text"
+      showRef.current.alt = "show"
     }
   }
 
