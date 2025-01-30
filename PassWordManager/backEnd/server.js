@@ -19,13 +19,19 @@ dotenv.config()
 
 // Connection URL
 const url = process.env.MONGODB_URI || 'mongodb+srv://Joyboy:kNhyZMPw6oD4q2Kp@cluster0.tzjeg.mongodb.net/keyGuardian?retryWrites=true&w=majority&tls=true';
-const client = new MongoClient(url, {
-    useNewUrlParser: true,
-    useUnifiedTopology: true
-});
+const client = new MongoClient(url);
 
 
-client.connect().then(()=>console.log("connected"));
+async function connectToDB() {
+
+  try {
+    await client.connect();
+    console.log('Database connected successfully')
+  } catch (err) {
+    console.error('Error connecting to the database', err);
+  }
+}
+
 
 // Database Name
 const dbName = 'keyGuardian';
