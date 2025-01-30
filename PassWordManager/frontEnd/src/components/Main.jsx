@@ -8,7 +8,7 @@ const Main = () => {
   const showRef = useRef("");
   const passRef = useRef("password");
 
-  const url = "http://localhost:3000/"
+  const url = "https://fullstackprojects-backend0.onrender.com"
 
   function showPass() {
     console.log("showpass clicked")
