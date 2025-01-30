@@ -1,6 +1,8 @@
 import React from 'react'
 import { useState, useEffect, useRef } from 'react'
 import Footer from './Footer'
+import close from "./images/close.png"
+import open from "./images/open.png"  
 
 const Main = () => {
   const [form, setForm] = useState({ site: "", username: "", password: "" })
@@ -15,12 +17,12 @@ const Main = () => {
     console.log(showRef.current.src)
     if (showRef.current.src.includes("open.png")) {
 
-      showRef.current.src = "./src/images/close.png"
+      showRef.current.src = close
       passRef.current.type = "password"
     }
     else {
 
-      showRef.current.src = "./src/images/open.png"
+      showRef.current.src = open
       passRef.current.type = "text"
     }
   }
@@ -88,7 +90,7 @@ const Main = () => {
 
             <span onClick={showPass} className='absolute right-40 w-[20px] top-55'><img
               ref={showRef}
-              src="./src/images/close.png"></img>
+              src={close}></img>
             </span>
           </div>
 
