@@ -10,7 +10,7 @@ const port = 3000;
 
 app.use(bodyParser.json())
 app.use(cors({
-    origin: "*",  // Allow all origins (for testing)
+    origin: "*", 
     methods: ["GET", "POST", "DELETE"], 
     allowedHeaders: ["Content-Type"]
 }));
@@ -18,8 +18,12 @@ app.use(cors({
 dotenv.config()
 
 // Connection URL
-const url = 'mongodb+srv://Joyboy:kNhyZMPw6oD4q2Kp@cluster0.tzjeg.mongodb.net/keyGuardian?retryWrites=true&w=majority&tls=true';
-const client = new MongoClient(url);
+const url = process.env.MONGODB_URI || 'mongodb+srv://Joyboy:kNhyZMPw6oD4q2Kp@cluster0.tzjeg.mongodb.net/keyGuardian?retryWrites=true&w=majority&tls=true';
+const client = new MongoClient(url, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true
+});
+
 
 client.connect().then(()=>console.log("connected"));
 
