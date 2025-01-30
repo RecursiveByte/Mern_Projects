@@ -9,7 +9,11 @@ const app = express()
 const port = 3000;
 
 app.use(bodyParser.json())
-app.use(cors())
+app.use(cors({
+    origin: "*",  // Allow all origins (for testing)
+    methods: ["GET", "POST", "DELETE"], 
+    allowedHeaders: ["Content-Type"]
+}));
 
 dotenv.config()
 
