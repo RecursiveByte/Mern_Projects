@@ -10,9 +10,9 @@ const Main = () => {
 
   const url = "https://fullstackprojects-backend0.onrender.com"
 
-   const close = "https://www.google.com/imgres?q=eye%20cloase%20icon&imgurl=https%3A%2F%2Ficons.veryicon.com%2Fpng%2Fo%2Fphotographic%2Fant-design-official-icon-library%2Feye-close-1.png&imgrefurl=https%3A%2F%2Fwww.veryicon.com%2Ficons%2Fphotographic%2Fant-design-official-icon-library%2Feye-close-1.html&docid=lKxCsk73DjWX3M&tbnid=Hx4pBSDPNlkhjM&vet=12ahUKEwiU392chJ6LAxXhTGwGHVP4DIAQM3oECBcQAA..i&w=512&h=512&hcb=2&ved=2ahUKEwiU392chJ6LAxXhTGwGHVP4DIAQM3oECBcQAA"
-   const open = "https://www.google.com/url?sa=i&url=https%3A%2F%2Ficonmonstr.com%2Feye-9-svg%2F&psig=AOvVaw2PWWolBNO0fqNnL51mG0Vs&ust=1738346560844000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCPj0m_GDnosDFQAAAAAdAAAAABAE"
-
+   const close = "./images/close.png"
+   const open = "./images/open.png"
+  
   function showPass() {
     console.log("showpass clicked")
     console.log(showRef.current.src)
