@@ -87,6 +87,6 @@ npm start
 3. View all your stored passwords on the dashboard
 4. Edit or delete entries using the respective buttons
 
-Your Name - [your.email@example.com](mailto:your.email@example.com)
+Retesh Mourya - [opboy4885@gmail.com](mailto:opboy4885@gmail.com)
 
 Project Link: [https://github.com/yourusername/password-manager](https://github.com/yourusername/password-manager)
