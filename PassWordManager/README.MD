@@ -80,25 +80,12 @@ npm start
 
 1. Open the application in your browser
 2. Add a new password:
-   - Click "Add New Password"
    - Enter the website name
    - Enter your username
    - Enter your password
-   - Click Save
+   - Click the Add button
 3. View all your stored passwords on the dashboard
 4. Edit or delete entries using the respective buttons
-
-## 🤝 Contributing
-
-Feel free to contribute to this project:
-
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/NewFeature`)
-3. Commit your changes (`git commit -m 'Add NewFeature'`)
-4. Push to the branch (`git push origin feature/NewFeature`)
-5. Open a Pull Request
-
-## 📧 Contact
 
 Your Name - [your.email@example.com](mailto:your.email@example.com)
 
