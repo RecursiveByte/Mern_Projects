@@ -8,7 +8,7 @@ const Footer = ({ formArray, handleEdit, getFunc }) => {
         let value = confirm("Do you  really want to delete")
 
         if (value) {
-            let res = await fetch("https://fullstackprojects-backend0.onrender.com", {
+            let res = await fetch("https://fullstackprojects-backend11.onrender.com", {
                 method: "DELETE",
                 headers: {
                     "Content-Type": "application/json",
@@ -54,92 +54,97 @@ const Footer = ({ formArray, handleEdit, getFunc }) => {
                 transition={Bounce}
             />
 
-            {formArray.length === 0 ? <div className='w-full text-center text-2xl font-bold'>No password</div> : <table className='w-full rounded-md overflow-hidden bg-blue-500 '>
-                <caption className='font-bold text-2xl p-2 '>Your Password</caption>
-                <thead className=' bg-blue-800 text-white font-bold' >
-                    <tr >
-                        <th>Site name</th>
-                        <th>User name</th>
-                        <th>Password</th>
-                        <th>Actions</th>
-                    </tr>
-                </thead>
-                <tbody className='text-center '>{console.log(formArray)}
-                    {formArray.map((item, index) => {
-                        return <tr key={index}>
-                            <td ><div onClick={() => handleCopy(item.site)} className='inline-block  text-1xl'><a>{item.site}</a></div>
-                                <span className='border-2 h-4 mx-2  border-white mb-10 '>
-                                    <script src="https://cdn.lordicon.com/lordicon.js"></script>
-                                    <lord-icon
-                                        onClick={() => handleCopy(item.site)}
-                                        src="https://cdn.lordicon.com/hmzvkifi.json"
-                                        trigger="hover"
-                                        stroke="bold"
-                                        colors="primary:#000000"
-                                        style={{ width: "20px", height: "20px", top: "2px" }}>
-                                    </lord-icon>
-                                </span></td>
-                            <td className=''>
-                                <div onClick={() => handleCopy(item.username)} className='inline-block  text-1xl'>{item.username}</div>
-                                <span className='border-2 h-4 mx-2 border-white mb-10 '>
-
-                                    <lord-icon
-                                        onClick={() => handleCopy(item.username)}
-                                        src="https://cdn.lordicon.com/hmzvkifi.json"
-                                        trigger="hover"
-                                        stroke="bold"
-                                        colors="primary:#000000"
-                                        style={{ width: "20px", height: "20px", top: "2px" }}>
-                                    </lord-icon>
-                                </span></td>
-                            <td><div onClick={() => handleCopy(item.password)} className='inline-block  text-1xl'>{item.password}</div>
-                                <span className='border-2 h-4 mx-2 border-white mb-10 '>
-
-                                    <lord-icon
-                                        onClick={() => handleCopy(item.password)}
-                                        src="https://cdn.lordicon.com/hmzvkifi.json"
-                                        trigger="hover"
-                                        stroke="bold"
-                                        colors="primary:#000000"
-                                        style={{ width: "20px", height: "20px", top: "2px" }}>
-                                    </lord-icon>
-                                </span></td>
-                            <td className='flex justify-center'>
-                                <div className='bg-white rounded-sm  border-2 border-black'>
-                                    <lord-icon
-                                        onClick={() => handleEdit(item)}
-                                        src="https://cdn.lordicon.com/exymduqj.json"
-                                        trigger="hover"
-                                        stroke="bold"
-                                        state="hover-line"
-                                        colors="primary:#000000,secondary:#08a88a"
-                                        style={{
-                                            width: "32px"
-                                            , height: "32px"
-                                        }}>
-                                    </lord-icon>
-                                </div>
-                                <div className='bg-white border-2 border-black'>
-                                    <lord-icon
-                                        onClick={() => handleDelete()}
-                                        src="https://cdn.lordicon.com/hwjcdycb.json"
-                                        trigger="click"
-                                        stroke="bold"
-                                        state="morph-trash-in"
-                                        colors="primary:#000000,secondary:#08a88a"
-                                        style={{ width: "32px", height: "32px" }}>
-                                    </lord-icon>
-                                </div>
-                            </td>
+            <div className='overflow-auto'>
+                {formArray.length === 0 ? <div className='w-full text-center text-2xl font-bold'>No password</div> : <table className='w-full max-w-full overflow-auto table-auto rounded-md  bg-blue-500 '>
+                    <caption className='font-bold text-2xl p-2 '>Your Password</caption>
+                    <thead className=' bg-blue-800 text-white font-bold' >
+                        <tr >
+                            <th className='p-1'>Site name</th>
+                            <th className='p-1'>User name</th>
+                            <th className='p-1'>Password</th>
+                            <th className='p-1'>Actions</th>
                         </tr>
-                    })}
+                    </thead>
+                    <tbody className='text-center '>
+                        {formArray.map((item, index) => {
+                            return <tr key={index}>
+                                <td ><div onClick={() => handleCopy(item.site)} className='inline-block break-all text-1xl'><a>{item.site}</a></div>
+                                    <span className='border-2 h-4 mx-2  border-white mb-10 '>
+                                        <script src="https://cdn.lordicon.com/lordicon.js"></script>
+                                        <lord-icon
+                                            onClick={() => handleCopy(item.site)}
+                                            src="https://cdn.lordicon.com/hmzvkifi.json"
+                                            trigger="hover"
+                                            stroke="bold"
+                                            colors="primary:#000000"
+                                            style={{ width: "20px", height: "20px", top: "2px" }}>
+                                        </lord-icon>
+                                    </span></td>
+                                <td className='p-1'>
+                                    <div onClick={() => handleCopy(item.username)} className='inline-block break-all text-1xl'>{item.username}</div>
+                                    <span className='border-2 h-4 mx-2 border-white mb-10 '>
+
+                                        <lord-icon
+                                            onClick={() => handleCopy(item.username)}
+                                            src="https://cdn.lordicon.com/hmzvkifi.json"
+                                            trigger="hover"
+                                            stroke="bold"
+                                            colors="primary:#000000"
+                                            style={{ width: "20px", height: "20px", top: "2px" }}>
+                                        </lord-icon>
+                                    </span>
+                                </td>
+                                <td className='p-1'>
+                                    <div onClick={() => handleCopy(item.password)} className='inline-block  text-1xl break-all'>{item.password}</div>
+                                    <span className='border-2 h-4 mx-2 border-white mb-10 '>
+
+                                        <lord-icon
+                                            onClick={() => handleCopy(item.password)}
+                                            src="https://cdn.lordicon.com/hmzvkifi.json"
+                                            trigger="hover"
+                                            stroke="bold"
+                                            colors="primary:#000000"
+                                            style={{ width: "20px", height: "20px", top: "2px" }}>
+                                        </lord-icon>
+                                    </span>
+                                    </td>
+                                <td className='flex p-1 justify-center'>
+                                    <div className='bg-white rounded-sm  border-2 border-black'>
+                                        <lord-icon
+                                            onClick={() => handleEdit(item)}
+                                            src="https://cdn.lordicon.com/exymduqj.json"
+                                            trigger="hover"
+                                            stroke="bold"
+                                            state="hover-line"
+                                            colors="primary:#000000,secondary:#08a88a"
+                                            style={{
+                                                width: "32px"
+                                                , height: "32px"
+                                            }}>
+                                        </lord-icon>
+                                    </div>
+                                    <div className='bg-white border-2 border-black'>
+                                        <lord-icon
+                                            onClick={() => handleDelete()}
+                                            src="https://cdn.lordicon.com/hwjcdycb.json"
+                                            trigger="click"
+                                            stroke="bold"
+                                            state="morph-trash-in"
+                                            colors="primary:#000000,secondary:#08a88a"
+                                            style={{ width: "32px", height: "32px" }}>
+                                        </lord-icon>
+                                    </div>
+                                </td>
+                            </tr>
+                        })}
 
 
 
 
 
-                </tbody>
-            </table>}
+                    </tbody>
+                </table>}
+            </div>
 
         </div>
     )
