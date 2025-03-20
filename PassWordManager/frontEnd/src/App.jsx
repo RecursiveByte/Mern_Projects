@@ -5,8 +5,6 @@ import Main from './components/Main'
 
 
 function  App() {
-
-  // let res = await fetch("http//localhost:3000");
   return (
     <>
       
