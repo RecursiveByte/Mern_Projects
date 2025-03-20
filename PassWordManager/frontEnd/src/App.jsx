@@ -9,6 +9,8 @@ function  App() {
   // let res = await fetch("http//localhost:3000");
   return (
     <>
+      <div className="bg-red-500 text-white "> Welcome to my website</div>
+      
       <Navbar/>
       <Main/>
     </>
