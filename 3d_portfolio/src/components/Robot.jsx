@@ -1,5 +1,3 @@
-
-
 import React, { useRef,useEffect } from 'react'
 import { useGLTF, useAnimations } from '@react-three/drei'
 
