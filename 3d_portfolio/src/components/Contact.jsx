@@ -2,7 +2,7 @@ import React, { Suspense } from "react";
 import { Element } from "react-scroll";
 import { Canvas } from "@react-three/fiber";
 import { PerspectiveCamera, OrbitControls, Stars } from "@react-three/drei";
-import EarthHologram from "./EarthHologram";
+import Robot from "./Robot";
 import Loader from "./Loader";
 import ContactForm from "./ContactForm";
 import { useMediaQuery } from "react-responsive";
@@ -39,7 +39,7 @@ const isTab = useMediaQuery({ minWidth: 640, maxWidth: 1000 });
               saturation={0}
               fade
             />
-          <EarthHologram scale={isSmall ? 1 : (isTab ? 4 :( isMobile ? 1.3 : 5))} position={ isSmall ? [1,1.9,0] :(isTab ? [2.7,0,0] :(isMobile ? [1,1.9,0] :[4,-0.5,0])) } rotation={[0,-Math.PI/1.5,0]}/>
+          <Robot scale={isSmall ? 1 : (isTab ? 4 :( isMobile ? 1.3 : 5))} position={ isSmall ? [1,1.9,0] :(isTab ? [2.7,0,0] :(isMobile ? [1,1.9,0] :[4,-0.5,0])) } rotation={[0,-Math.PI/1.5,0]}/>
           </Suspense>
         </Canvas>
         )}

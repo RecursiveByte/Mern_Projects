@@ -3,13 +3,13 @@
 import React, { useRef,useEffect } from 'react'
 import { useGLTF, useAnimations } from '@react-three/drei'
 
-const Hologram = (props) => {
+const Robot = (props) => {
   const group = useRef()
   const { nodes, materials, animations } = useGLTF('/models/robot.glb')
   const { actions ,names} = useAnimations(animations, group)
 
   useEffect(() => {
-    // Play the first animation if available
+    
     if (names.length > 0) {
       const firstAnimation = names[0];
       actions[firstAnimation].reset().play();
@@ -136,4 +136,4 @@ const Hologram = (props) => {
 useGLTF.preload('/models/robot.glb')
 
 
-export default Hologram;
+export default Robot;
