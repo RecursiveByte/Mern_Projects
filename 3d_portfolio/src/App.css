@@ -2,9 +2,8 @@
   margin:0;
   padding:0;
   box-sizing: border-box;
-};
+}
 
-/* Hide scrollbar for Chrome, Safari and Opera */
 body::-webkit-scrollbar {
   display: none;
 }
@@ -13,10 +12,9 @@ html {
   scroll-behavior: smooth;
 }
 
-/* Hide scrollbar for IE, Edge and Firefox */
 body {
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
+  -ms-overflow-style: none;  
+  scrollbar-width: none;  
 }
 
 html::-webkit-scrollbar {
