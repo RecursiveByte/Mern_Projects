@@ -92,7 +92,7 @@ export const project = [
     projectName: "Solar System",
     projectImageUrl: "/assets/solar.png",
     projectGithubLink: "https://github.com/RecursiveByte/SolarSystem/tree/main/solarSystem",
-    projectLink: "https://solarsystem1.onrender.com/",
+    projectLink: "https://solarsystem-whd4.onrender.com",
     projectDesc: "The Solar System Project Simulation was a personal project I created to test and enhance my skills in React and Tailwind CSS. It featured a clean and interactive 2D representation of the solar system, with the Sun at the center and planets orbiting around it. The project allowed me to practice building dynamic, responsive user interfaces and styling them efficiently using Tailwind. By combining React's component-based structure with Tailwind's utility-first approach, I was able to create a visually appealing and functional simulation. This project not only deepened my understanding of these technologies but also resulted in a fun and educational tool to explore the solar system."
   },
   {
