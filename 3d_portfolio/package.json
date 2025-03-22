@@ -28,7 +28,6 @@
     "react-router-dom": "^7.3.0",
     "react-scroll": "^1.9.3",
     "tailwind-scrollbar-hide": "^2.0.0",
-    "tech-stack-icons": "^2.1.0",
     "three": "^0.174.0"
   },
   "devDependencies": {
