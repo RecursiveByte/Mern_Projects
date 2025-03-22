@@ -4,7 +4,7 @@ import { motion, useScroll, useInView, transform } from "framer-motion";
 import { skills, myData } from "../constants";
 import { useRef } from "react";
 import SoftSkills from "./SoftSkills";
-import Links from "./links"
+import Links from "./Links"
 import Education from "./Education"
 
 import {
