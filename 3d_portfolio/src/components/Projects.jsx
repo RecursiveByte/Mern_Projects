@@ -20,8 +20,8 @@ const Projects = () => {
       <div className="projects flex items-center min-h-screen min-w-screen justify-center ">
         <motion.div
           variants={containerVariants}
-          initial="hidden"
-          animate="visible"
+          initial="initial"
+          animate="animate"
           className="main w-[90%] relative flex rounded-xl shadow-[0_0_20px_5px_rgba(255,255,255,1)]  flex-col gap-4 p-4 h-[90%] "
         >
           <motion.h1
