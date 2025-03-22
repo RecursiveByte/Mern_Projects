@@ -13,8 +13,8 @@ import {
   childVariants,
   opacityVariant,
 } from "../constants/variants";
-import LanguagesKnown from "./language";
-import OtherSkills from "./otherSkills";
+import LanguagesKnown from "./Language";
+import OtherSkills from "./OtherSkills";
 
 const About = () => {
   const skillsRef = useRef();
