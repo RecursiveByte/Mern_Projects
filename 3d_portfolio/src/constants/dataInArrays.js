@@ -16,10 +16,10 @@ export const educationData = [
     score: "97.6"
   },
   {
-    level: "BTech",
+    level: "BTech (Cse)",
     institution: "Indian Institute Of Information Technology Manipur (IIIT M)",
     scoreType: "cpi",
-    score: myData.currentCpi
+    score: "7.61"
   }
 ];
 
