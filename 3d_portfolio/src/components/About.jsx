@@ -98,6 +98,7 @@ const About = () => {
                   <img
                     className="bg-transparent"
                     src={`/assets/${ele.name}.svg`}
+                    alt="loading"
                   />
                 </motion.div>
               ))}
