@@ -13,7 +13,7 @@ export const educationData = [
     level: "12th",
     institution: "Sri Gayatri Junior College",
     scoreType: "percentage",
-    score: "97.6"
+    score: "96.8"
   },
   {
     level: "BTech (Cse)",
