@@ -32,7 +32,7 @@ const Login = ({setIsLogging}) => {
       try {
           const res = await axios.post(backendUrl + "/login",formData,{withCredentials:true});
         
-          console.log(res.data.success,res.data.message);
+         
           if(res.data.success)
           {
             toast.success(res.data.message);
