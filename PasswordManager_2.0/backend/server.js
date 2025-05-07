@@ -15,14 +15,9 @@ dotenv.config();
 app.use(cors({
     origin: "https://passwordmanager-2-0-owpd.onrender.com",
     credentials: true,
-    methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
-    allowedHeaders: ['Content-Type', 'Authorization']
+   
 }));
 
-app.options('*', cors({
-    origin: 'https://passwordmanager-2-0-owpd.onrender.com',
-    credentials: true
-}));
 
 app.use(express.json());
 app.use(cookieParser());
