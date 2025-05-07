@@ -13,7 +13,7 @@ const app = express();
 dotenv.config();
 
 app.use(cors({
-    origin: "https://passwordmanager-2-0-owpd.onrender.com/",
+    origin: "https://passwordmanager-2-0-owpd.onrender.com",
     credentials: true
 }));
 
