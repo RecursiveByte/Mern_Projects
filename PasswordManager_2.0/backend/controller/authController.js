@@ -65,8 +65,8 @@ export const login = async (req, res) => {
                 {
                     maxAge: 1 * 24 * 60 * 60 * 1000,
                     httpOnly: false,
-                    secure: process.env.NODE_ENV === 'production',
-                    sameSite: process.env.NODE_ENV === 'production' ? "strict" : "lax"
+                    secure: true
+                    sameSite: "none"
                 }
             );
             return res.json({ success: true, message: "valid user" })
