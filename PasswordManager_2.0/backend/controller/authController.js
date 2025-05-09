@@ -71,6 +71,7 @@ export const login = async (req, res) => {
                      path: '/'
                 }
             );
+            console.log(res.cookie);
             return res.json({ success: true, message: "valid user" })
         }
 
