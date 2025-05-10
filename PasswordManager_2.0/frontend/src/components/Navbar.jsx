@@ -6,9 +6,15 @@ import { toast } from "react-toastify";
 
 const Navbar = ({ isLogging, firstLetter, setIsLogging }) => {
   const [isVerified, setIsVerified] = useState(false);
+  const [showDropdown, setShowDropdown] = useState(false);
 
   console.log(firstLetter);
   const navigate = useNavigate();
+
+  const toggleDropdown = () => {
+    console.log("clicked toggle");
+    setShowDropdown(!showDropdown);
+  }
 
   const doGetData = async () => {
     const data = await getData();
@@ -69,11 +75,12 @@ const Navbar = ({ isLogging, firstLetter, setIsLogging }) => {
         </Link>
         {isLogging ? (
           <div className="group flex flex-col items-end top-4  absolute right-4 ">
-            <div className="w-10 h-10 flex justify-center items-center text-2xl px-2 py-3 hover:bg-slate-950 bg-slate-800  rounded-full font-bold cursor-pointer ">
+            <div onClick={toggleDropdown} className="w-10 h-10 flex justify-center items-center text-2xl px-2 py-3 hover:bg-slate-950 bg-slate-800  rounded-full font-bold cursor-pointer ">
               {firstLetter}
             </div>
 
-            <div className="rounded-md group-hover:block hidden bg-black p-1 font-medium">
+            {showDropdown && (
+            <div className="rounded-md   bg-black p-1 font-medium">
               <div onClick={handleLogout} className=" p-2 cursor-pointer  ">
                 Logout
               </div>
@@ -84,6 +91,7 @@ const Navbar = ({ isLogging, firstLetter, setIsLogging }) => {
                 </div>
               )}
             </div>
+            )}
           </div>
         ) : (
           <Link to="/login">
