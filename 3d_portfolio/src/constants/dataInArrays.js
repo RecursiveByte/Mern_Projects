@@ -98,16 +98,10 @@ export const project = [
   {
     projectName: "Password Manager",
     projectImageUrl: "/assets/passwordManager.png",
-    projectLink: "https://passwordmanager-6aaa.onrender.com/",
-    projectGithubLink: "https://github.com/RecursiveByte/FullStackProjects/tree/main/PassWordManager",
-    projectDesc: "My Password Manager is a straightforward and functional application designed to help users store and manage their passwords. Built using the MERN stack (MongoDB, Express, React, and Node.js), this project allows users to enter and view their saved passwords. The application retrieves data directly from a MongoDB database and displays the information that each user has entered.While the project is currently a basic implementation, it serves as a solid foundation for future enhancements. It demonstrates my ability to work with full-stack technologies, handle data storage and retrieval, and create a user-friendly interface. This project is a great starting point for adding advanced features like user authentication, data encryption, and personalized data isolation in the future."
+    projectLink: "https://passwordmanager-2-0-owpd.onrender.com",
+    projectGithubLink: "https://github.com/RecursiveByte/Mern_Projects/tree/main/PasswordManager_2.0",
+    projectDesc: "My Password Manager is a secure, responsive, and user-friendly application built using the MERN stack (MongoDB, Express, React, and Node.js). Designed to cater to multiple users, the app allows individuals to safely store and manage their passwords with ease. The system implements robust encryption techniques to ensure data protection and privacy. The intuitive, modern interface provides a seamless experience for users to interact with their saved passwords. With features like multi-user support and strong security protocols, this project highlights my proficiency in full-stack development while laying a strong foundation for future enhancements, including advanced authentication and personalized data management."
 
-  },
-  // {
-    // projectName: "Clutter Remover",
-    // projectImageUrl: "https://example.com/clutter-remover-image.jpg",
-    // projectLink: "https://example.com/clutter-remover",
-    // projectGithubLink: "https://github.com/username/clutter-remover"
-  // }
+  }
 ];
 
