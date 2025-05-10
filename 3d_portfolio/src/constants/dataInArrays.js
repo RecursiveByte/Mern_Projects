@@ -97,7 +97,7 @@ export const project = [
   },
   {
     projectName: "Password Manager",
-    projectImageUrl: "/assets/passwordManager.png",
+    projectImageUrl: "/assets/pass.png",
     projectLink: "https://passwordmanager-2-0-owpd.onrender.com",
     projectGithubLink: "https://github.com/RecursiveByte/Mern_Projects/tree/main/PasswordManager_2.0",
     projectDesc: "My Password Manager is a secure, responsive, and user-friendly application built using the MERN stack (MongoDB, Express, React, and Node.js). Designed to cater to multiple users, the app allows individuals to safely store and manage their passwords with ease. The system implements robust encryption techniques to ensure data protection and privacy. The intuitive, modern interface provides a seamless experience for users to interact with their saved passwords. With features like multi-user support and strong security protocols, this project highlights my proficiency in full-stack development while laying a strong foundation for future enhancements, including advanced authentication and personalized data management."
