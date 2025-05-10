@@ -192,9 +192,9 @@ export const sendOtpPasswordReset = async (req, res) => {
     res.cookie("token2", token,
         {
             maxAge: 1 * 24 * 60 * 60 * 1000,
-            httpOnly: false,
-            secure: process.env.NODE_ENV === 'production',
-            sameSite: process.env.NODE_ENV === 'production' ? "strict" : "lax"
+            httpOnly: true,
+            secure: true,
+            sameSite: "none"
         }
     )
 
