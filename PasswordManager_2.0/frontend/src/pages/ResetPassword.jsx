@@ -29,7 +29,7 @@ const ResetPassword = ({setIsLogging}) => {
       
       if(res.data.success) {
         toast.success(res.data.message);
-        setIsLogging(true);
+
         navigate("/resetPasswordOtp");
       }
       else {
