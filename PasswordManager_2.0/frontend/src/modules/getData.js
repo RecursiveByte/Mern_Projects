@@ -10,7 +10,7 @@ const getData = async () => {
       return res.data;
 
     } catch (error) {
-        console.log(error.message );
+        
         return {success:false,message:error.message}
     }
   }
