@@ -8,7 +8,7 @@ const Navbar = ({ isLogging, firstLetter, setIsLogging }) => {
   const [isVerified, setIsVerified] = useState(false);
   const [showDropdown, setShowDropdown] = useState(false);
 
-  console.log(firstLetter);
+
   const navigate = useNavigate();
 
   const toggleDropdown = () => {
@@ -57,7 +57,7 @@ useEffect(() => {
       const res = await axios.post(backendUrl + "/logout",{}, {
         withCredentials: true,
       });
-      console.log(res);
+
       if (res.data.success) {
         toast.success(res.data.message);
         setIsLogging(false);
