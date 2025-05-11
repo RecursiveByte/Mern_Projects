@@ -18,14 +18,13 @@ const Navbar = ({ isLogging, firstLetter, setIsLogging }) => {
 
   const doGetData = async () => {
     const data = await getData();
-    console.log("this ", data.data.isVerified);
+    
     setIsVerified(data.data.isVerified);
-    console.log("yel9 ", data);
+    
   };
 
   useEffect(() => {
-    console.log(isVerified);
-    console.log("status ", isVerified);
+   
   }, [isVerified]);
 
   doGetData();
@@ -36,7 +35,7 @@ const Navbar = ({ isLogging, firstLetter, setIsLogging }) => {
       const res = await axios.post(backendUrl + "/sendOtp",{}, {
         withCredentials: true,
       });
-      console.log(res);
+     
       if (res.data.success) {
         toast.success(res.data.message);
         navigate("/verifyOtp");
