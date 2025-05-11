@@ -18,7 +18,7 @@ const Navbar = ({ isLogging, firstLetter, setIsLogging }) => {
 
   const doGetData = async () => {
     const data = await getData();
-    console.log(data.data.isVerified);
+   
     setIsVerified(data.data.isVerified);
     
   };
