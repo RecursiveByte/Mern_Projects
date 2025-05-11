@@ -22,7 +22,7 @@ const User = ({ setIsLogging, isLogging, firstLetter, setLetter }) => {
         setName(res.data.data.name);
         setLetter(res.data.data.name.charAt(0).toUpperCase());
         setIsLogging(true);
-        fetchUserEntries(); // fetch entries after setting login
+        fetchUserEntries(); 
       } else {
         toast.error(res.data.message);
       }
@@ -37,8 +37,8 @@ const User = ({ setIsLogging, isLogging, firstLetter, setLetter }) => {
         withCredentials: true,
       });
       if (res.data.success) {
-        console.log("this ",res.data.data);
-        setUserEntries(res.data.data); // assuming res.data.data is an array of userData
+       
+        setUserEntries(res.data.data); 
       } else {
         toast.error(res.data.message);
       }
