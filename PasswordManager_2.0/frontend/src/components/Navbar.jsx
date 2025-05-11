@@ -12,13 +12,13 @@ const Navbar = ({ isLogging, firstLetter, setIsLogging }) => {
   const navigate = useNavigate();
 
   const toggleDropdown = () => {
-    console.log("clicked toggle");
+    
     setShowDropdown(!showDropdown);
   }
 
   const doGetData = async () => {
     const data = await getData();
-    
+    console.log(data.data.isVerified);
     setIsVerified(data.data.isVerified);
     
   };
@@ -27,7 +27,12 @@ const Navbar = ({ isLogging, firstLetter, setIsLogging }) => {
    
   }, [isVerified]);
 
-  doGetData();
+useEffect(() => {
+  if (isLogging) {
+    doGetData();
+  }
+}, [isLogging]);
+
 
   const handleVerify = async () => {
     const backendUrl = import.meta.env.VITE_BACKEND_URL;
