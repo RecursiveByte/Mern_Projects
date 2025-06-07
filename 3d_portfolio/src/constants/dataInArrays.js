@@ -19,7 +19,7 @@ export const educationData = [
     level: "BTech (Cse)",
     institution: "Indian Institute Of Information Technology Manipur (IIIT M)",
     scoreType: "cpi",
-    score: "7.61"
+    score: "7.80"
   }
 ];
 
