@@ -11,7 +11,7 @@ const LanguagesKnown = () => {
     const inView = useInView(softRef, { once: false, amount: 0.3 });
 
   return (
-    <div className="languageCon tainer  rounded-md p-4  bg-gray-800 text-white">
+    <div className="languageCon tainer  rounded-md p-4  bg-transparent text-white">
         <h3 className="text-2xl ml-2 space-y-3 text-emerald-400 font-bold mb-4">Languages Known</h3>
       <motion.ul 
       ref={softRef}
