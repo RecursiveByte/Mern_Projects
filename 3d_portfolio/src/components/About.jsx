@@ -7,14 +7,15 @@ import SoftSkills from "./softSkills";
 import Links from "./links"
 import Education from "./Education"
 
+import OtherSkills from "./OtherSkills";
+import LanguagesKnown from "./Language";
+
 import {
   containerVariants,
   parentVariants,
   childVariants,
   opacityVariant,
 } from "../constants/variants";
-import LanguagesKnown from "./language";
-import OtherSkills from "./otherSkills";
 
 const About = () => {
   const skillsRef = useRef();
