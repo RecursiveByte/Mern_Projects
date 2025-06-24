@@ -3,8 +3,8 @@ import { Element } from "react-scroll";
 import { motion, useScroll, useInView, transform } from "framer-motion";
 import { skills, myData } from "../constants";
 import { useRef } from "react";
-import SoftSkills from "./SoftSkills";
-import Links from "./Links"
+import SoftSkills from "./softSkills";
+import Links from "./links"
 import Education from "./Education"
 
 import {
@@ -13,8 +13,8 @@ import {
   childVariants,
   opacityVariant,
 } from "../constants/variants";
-import LanguagesKnown from "./Language";
-import OtherSkills from "./OtherSkills";
+import LanguagesKnown from "./language";
+import OtherSkills from "./otherSkills";
 
 const About = () => {
   const skillsRef = useRef();
@@ -36,23 +36,17 @@ const About = () => {
           }}
           className="main relative top-[5%] bg-gradient-to-r from-black via-neutral-900 to-black w-[90%] min-h-fit flex flex-col gap-10 sm:gap-6 justify-around p-8 rounded-md shadow-[0_0_20px_5px_rgba(255,255,255,1)] items-center"
         >
-          <div className="w-full h-full  up flex  items-center flex-col lg:flex-row px-4 gap-10 lg:justify-around ">
-            <motion.div
-              style={{
-                backgroundImage: `url('/assets/${myData.myCurrentImgUrl}')`,
-              }}
-              animate={{ y: [0, 30, 0], rotateZ: [0, 5, 0, -5, 0] }}
-              transition={{ duration: 3, repeat: Infinity }}
-              className="imageContainer sm:w-[40%] lg:w-[20%] rounded-xl w-[40%] aspect-[3/4]  shadow-[0_0_20px_5px_rgba(255,255,255,1)] bg-cover  bg-[position:0%_80%] "
-            ></motion.div>
-            <div className="w-full  overview flex flex-col sm:text-5xl text-3xl gap-4  text-white p-4 sm:min-w-[55%] lg:w-[65%] h-[90%] rounded-3xl bg-transparent  bg-black shadow-[0_0_10px_3px_rgba(255,255,255,0.5)]">
+          <div className="w-full h-full  up flex  items-center flex-col lg:flex-row  gap-10 lg:justify-around ">
+            
+            <div className="w-full  overview flex flex-col sm:text-5xl text-3xl gap-4  text-white p-4  h-[90%] rounded-3xl bg-transparent ">
               <h2 className="text-center font-mono  ">
                 <span className="hover:[text-shadow:_0_0_50px_#ffffff]">
                   Over
                   <span className="text-emerald-500 font-extrabold">view</span>
                 </span>
               </h2>
-              <p className="text-xl font-mono p-2">
+
+              <p className="w-full  text-sm lg:text-2xl  font-mono p-2">
                 "Passionate about technology and driven by curiosity, I love
                 building solutions that blend creativity with code. Always eager
                 to learn, explore, and grow in the ever-evolving tech
@@ -98,7 +92,6 @@ const About = () => {
                   <img
                     className="bg-transparent"
                     src={`/assets/${ele.name}.svg`}
-                    alt="loading"
                   />
                 </motion.div>
               ))}
