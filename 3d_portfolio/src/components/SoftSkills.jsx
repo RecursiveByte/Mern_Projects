@@ -11,7 +11,7 @@ const SoftSkills = () => {
   const inView = useInView(softRef, { once: false, amount: 0.2 });
   
   return (
-    <div className="p-6 bg-gray-800 rounded-lg shadow-lg text-white">
+    <div className="p-6 bg-transparent rounded-lg shadow-lg text-white">
       <h2 className="text-2xl font-bold mb-4 text-emerald-400">
         Soft Skills
       </h2>
