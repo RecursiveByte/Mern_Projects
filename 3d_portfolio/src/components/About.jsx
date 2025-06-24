@@ -3,7 +3,7 @@ import { Element } from "react-scroll";
 import { motion, useScroll, useInView, transform } from "framer-motion";
 import { skills, myData } from "../constants";
 import { useRef } from "react";
-import SoftSkills from "./softSkills";
+import SoftSkills from "./SoftSkills";
 import Links from "./links"
 import Education from "./Education"
 
