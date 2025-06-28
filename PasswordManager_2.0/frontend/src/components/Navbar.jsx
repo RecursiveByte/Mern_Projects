@@ -84,13 +84,13 @@ useEffect(() => {
             </div>
 
             {showDropdown && (
-            <div className="rounded-md   bg-black p-1 font-medium">
+            <div className="rounded-md   bg-black p-1 font-medium z-[999]">
               <div onClick={handleLogout} className=" p-2 cursor-pointer  ">
                 Logout
               </div>
 
               {!isVerified && (
-                <div onClick={handleVerify} className=" p-2 cursor-pointer  ">
+                <div onClick={handleVerify} className=" p-2 cursor-pointer  z-[999]">
                   Verify
                 </div>
               )}
