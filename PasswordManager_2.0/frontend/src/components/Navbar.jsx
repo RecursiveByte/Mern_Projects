@@ -69,7 +69,7 @@ useEffect(() => {
   };
 
   return (
-    <nav className="fixed   bg-slate-900 text-white shadow-md">
+    <nav className="fixed   bg-slate-900 text-white shadow-md z-10">
       <div className=" flex  w-screen  justify-between items-center p-4">
         <Link to="/">
           <div className="font-bold text-2xl  ">
@@ -78,19 +78,19 @@ useEffect(() => {
           </div>
         </Link>
         {isLogging ? (
-          <div className="group flex flex-col items-end top-4  absolute right-4 z-10">
+          <div className="group flex flex-col items-end top-4  absolute right-4 ">
             <div onClick={toggleDropdown} className="w-10 h-10 flex justify-center items-center text-2xl px-2 py-3 hover:bg-slate-950 bg-slate-800  rounded-full font-bold cursor-pointer ">
               {firstLetter}
             </div>
 
             {showDropdown && (
-            <div className="rounded-md   bg-black p-1 font-medium z-[999]">
+            <div className="rounded-md   bg-black p-1 font-medium ">
               <div onClick={handleLogout} className=" p-2 cursor-pointer  ">
                 Logout
               </div>
 
               {!isVerified && (
-                <div onClick={handleVerify} className=" p-2 cursor-pointer  z-[999]">
+                <div onClick={handleVerify} className=" p-2 cursor-pointer  ">
                   Verify
                 </div>
               )}
