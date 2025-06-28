@@ -35,7 +35,7 @@ const Login = ({setIsLogging}) => {
          
           if(res.data.success)
           {
-            toast.success(res.data.message);
+           // toast.success(res.data.message);
             navigate("/user")
             setIsLogging(true);
           }
