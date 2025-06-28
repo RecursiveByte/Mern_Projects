@@ -78,7 +78,7 @@ useEffect(() => {
           </div>
         </Link>
         {isLogging ? (
-          <div className="group flex flex-col items-end top-4  absolute right-4 ">
+          <div className="group flex flex-col items-end top-4  absolute right-4 z-10">
             <div onClick={toggleDropdown} className="w-10 h-10 flex justify-center items-center text-2xl px-2 py-3 hover:bg-slate-950 bg-slate-800  rounded-full font-bold cursor-pointer ">
               {firstLetter}
             </div>
