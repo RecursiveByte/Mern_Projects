@@ -432,8 +432,8 @@ export const logoutUser = (req, res) => {
   res
     .clearCookie("token", {
       httpOnly: true,
-      secure: false,
-      sameSite: "Strict"
+      secure: true,
+      sameSite: "None"
     })
     .status(200)
     .json({ message: "Logout successful" });
