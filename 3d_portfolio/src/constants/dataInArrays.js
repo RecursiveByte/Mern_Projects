@@ -95,7 +95,6 @@ export const project = [
     projectLink: "https://bookverse-r904.onrender.com/",
     projectDesc: "A full-stack book review platform with secure authentication, CRUD operations, and responsive design. Users can write, edit, and delete their own reviews while exploring community recommendations."
   },
-  },
   {
     projectName: "Solar System",
     projectImageUrl: "/assets/solar.png",
