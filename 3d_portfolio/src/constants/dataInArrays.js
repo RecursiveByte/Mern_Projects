@@ -89,19 +89,26 @@ export const otherSkills = [
 
 export const project = [
   {
+    projectName: "Book verse",
+    projectImageUrl: "https://res.cloudinary.com/dhjxpn70k/image/upload/v1754208586/book_images/userDashboard.png",
+    projectGithubLink: "https://github.com/RecursiveByte/Mern_Projects/tree/main/brms",
+    projectLink: "https://bookverse-r904.onrender.com/",
+    projectDesc: "A full-stack book review platform with secure authentication, CRUD operations, and responsive design. Users can write, edit, and delete their own reviews while exploring community recommendations."
+  },
+  },
+  {
     projectName: "Solar System",
     projectImageUrl: "/assets/solar.png",
     projectGithubLink: "https://github.com/RecursiveByte/SolarSystem/tree/main/solarSystem",
     projectLink: "https://solarsystem-whd4.onrender.com",
-    projectDesc: "The Solar System Project Simulation was a personal project I created to test and enhance my skills in React and Tailwind CSS. It featured a clean and interactive 2D representation of the solar system, with the Sun at the center and planets orbiting around it. The project allowed me to practice building dynamic, responsive user interfaces and styling them efficiently using Tailwind. By combining React's component-based structure with Tailwind's utility-first approach, I was able to create a visually appealing and functional simulation. This project not only deepened my understanding of these technologies but also resulted in a fun and educational tool to explore the solar system."
+    projectDesc: "An interactive 2D solar system simulation built with React and Tailwind CSS, featuring animated planetary orbits and a clean, responsive interface for educational exploration."
   },
   {
     projectName: "Password Manager",
     projectImageUrl: "/assets/pass.png",
     projectLink: "https://passwordmanager-2-0-owpd.onrender.com",
     projectGithubLink: "https://github.com/RecursiveByte/Mern_Projects/tree/main/PasswordManager_2.0",
-    projectDesc: "My Password Manager is a secure, responsive, and user-friendly application built using the MERN stack (MongoDB, Express, React, and Node.js). Designed to cater to multiple users, the app allows individuals to safely store and manage their passwords with ease. The system implements robust encryption techniques to ensure data protection and privacy. The intuitive, modern interface provides a seamless experience for users to interact with their saved passwords. With features like multi-user support and strong security protocols, this project highlights my proficiency in full-stack development while laying a strong foundation for future enhancements, including advanced authentication and personalized data management."
-
+    projectDesc: "A secure multi-user password management application built with the MERN stack, featuring encryption, user authentication, and an intuitive interface for safe password storage and management."
   }
 ];
 
