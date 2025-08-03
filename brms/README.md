@@ -2,6 +2,9 @@
 
 A modern, full-stack book review platform where readers can discover, review, and discuss their favorite books. Built with a focus on user experience and community engagement.
 
+
+[📖 Try BookVerse Live](https://bookverse-r904.onrender.com)
+
 ## ✨ Features
 
 - **User Authentication**: Secure user registration and login system
