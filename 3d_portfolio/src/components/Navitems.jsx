@@ -20,7 +20,7 @@ const Navitems = () => {
           )
         } else {
           return (
-            <li key={ele.id} className='text-gray-400 hover:text-white'>
+            <li key={ele.id} className='text-gray-400 cursor-pointer hover:text-white'>
               <Link to={ele.to} spy={true} smooth={true} duration={300}>
                 {ele.name}
               </Link>
