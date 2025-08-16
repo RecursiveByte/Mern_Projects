@@ -1,5 +1,10 @@
 export const Navlinks = [
     {
+    id:0,
+    name: "resume",
+    to: "home"
+    },
+    {
         id: 1,
         name: "home",
         to: "home"
