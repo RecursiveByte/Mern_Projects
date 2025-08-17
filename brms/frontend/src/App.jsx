@@ -33,6 +33,7 @@ function App() {
         <Route path="/admin/viewBooks" element={  <ProtectedRoute><AdminViewBooks/></ProtectedRoute>} />
         <Route path="/admin/upload-image" element={  <ProtectedRoute><AdminUpload/></ProtectedRoute>} />
         <Route path="/admin/add-book" element={  <ProtectedRoute><CSVUploader/></ProtectedRoute>} />
+        <Route path="*" element={<Navigate to="/" />} />
 
       </Routes >
    </>
