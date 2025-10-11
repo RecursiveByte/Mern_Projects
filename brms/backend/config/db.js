@@ -1,8 +1,3 @@
-import mysql from 'mysql2/promise';
-import dotenv from 'dotenv';
-
-dotenv.config();
-
 const pool = mysql.createPool({
   host: process.env.DB_HOST,
   user: process.env.DB_USER,
@@ -12,11 +7,8 @@ const pool = mysql.createPool({
   connectionLimit: 10,
   queueLimit: 0,
   ssl: {
-    ca: process.env.DB_CA
+    ca: process.env.DB_CA.replace(/\\n/g, '\n') // convert \n to actual newlines
   }
- 
 });
 
- console.log(process.env.DB_CA)
-
-export default pool;
+console.log(pool.config.ssl.ca); // to verify
