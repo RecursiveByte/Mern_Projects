@@ -12,11 +12,24 @@ const pool = mysql.createPool({
   connectionLimit: 10,
   queueLimit: 0,
   ssl: {
-    ca: process.env.DB_CA.replace(/\\n/g, '\n') // convert \n to actual newlines
+    ca: process.env.DB_CA.replace(/\\n/g, '\n')
   }
 });
 
-console.log(pool.config.ssl.ca); // to verify
+// Optional: verify CA string
+console.log("CA loaded for MySQL connection:", process.env.DB_CA ? "✅ yes" : "❌ no");
+
+// Optional: test connection
+async function testConnection() {
+  try {
+    const conn = await pool.getConnection();
+    console.log("MySQL connected!");
+    conn.release();
+  } catch (err) {
+    console.error("Error connecting to MySQL:", err);
+  }
+}
+
+testConnection();
 
 export default pool;
-
