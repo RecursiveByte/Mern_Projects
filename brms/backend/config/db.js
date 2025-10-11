@@ -14,7 +14,9 @@ const pool = mysql.createPool({
   ssl: {
     ca: process.env.DB_CA
   }
-  console.log(process.env.DB_CA)
+ 
 });
+
+ console.log(process.env.DB_CA)
 
 export default pool;
