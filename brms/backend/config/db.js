@@ -17,3 +17,6 @@ const pool = mysql.createPool({
 });
 
 console.log(pool.config.ssl.ca); // to verify
+
+export default pool;
+
