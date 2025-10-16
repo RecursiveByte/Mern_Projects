@@ -32,38 +32,88 @@ export const links = {
     linkedin:"https://www.linkedin.com/in/retesh-mourya-766646274/"
 }
 
-export const skills = [
-    // MERN Stack
-    { name: "react" },
-    { name: "expressjs" },
-    { name: "nodejs" },
-    { name: "mongodb" },
+export const skills = {
+    programmingLanguages: [
+      { name: "Javascript" }, // or keep as "js"
+      { name: "Python" },
+      { name: "C" },
+      { name: "C++" },
+    ],
     
-    // Other Frontend & Tools
-    { name: "threejs" },
-    { name: "tailwindcss" },
-    { name: "redux" },
-    { name: "vite" },
-    { name: "git" },
-    { name: "github" },
-    { name: "mysql" },
-    
-    // Basics
-    { name: "html" },
-    { name: "css" },
-    { name: "js" },
-    {name:"framermotion"},
-  
-    // Programming Languages
-    { name: "c" },
-    { name: "c++" },
-    { name: "python" },
-  ];
+    development: {
+      frontend: [
+        { name: "Html" },
+        { name: "Css" },
+        { name: "React" },
+        { name: "Redux" },
+        { name: "Tailwindcss" },
+        { name: "Threejs" },
+        { name: "Framer-motion" },
+      ],
+      backend: [
+        { name: "Nodejs" },
+        { name: "Expressjs" },
+        {name:"Sequelize"},
+        {name:"Fast-api"},
+        {name:"Rest-api"},
+        {name:"Pandas"},
+        {name:"Numpy"},
+        {name:"Scikit-learn"},
+        {name:"Matplotlib"},
+      ],
+      database: [
+        { name: "Mongodb" },
+        { name: "Mysql" },
+        {name:"Postgresql"}
+      ],
+    },
+    tools: [
+      { name: "Git" },
+      { name: "Github" },
+      {name:"Github-Copilot"},
+      { name: "Vite" },
+      {name:"Colab"},
+      {name:"Jupyter"},
+      {name:"VS-Code"},
+      {name:"Postman"},
+      {name:"Figma"},
+    //   {name:"Canva"},
+      {name:"Render"}
+    ],
+  };
 
-export const myData = {
-    currentCpi:"7.61",
-    myCurrentImgUrl:"n.png",
-}
+// export const skills = [
+    // MERN Stack
+    // { name: "react" },
+    // { name: "expressjs" },
+    // { name: "nodejs" },
+    // { name: "mongodb" },
+    // 
+    // Other Frontend & Tools
+    // { name: "threejs" },
+    // { name: "tailwindcss" },
+    // { name: "redux" },
+    // { name: "vite" },
+    // { name: "git" },
+    // { name: "github" },
+    // { name: "mysql" },
+    // 
+    // Basics
+    // { name: "html" },
+    // { name: "css" },
+    // { name: "js" },
+    // {name:"framermotion"},
+//   
+    // Programming Languages
+    // { name: "c" },
+    // { name: "c++" },
+    // { name: "python" },
+//   ];
+
+// export const myData = {
+    // currentCpi:"7.61",
+    // myCurrentImgUrl:"n.png",
+// }
 
 
   

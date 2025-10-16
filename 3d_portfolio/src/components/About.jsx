@@ -1,11 +1,12 @@
 import React from "react";
 import { Element } from "react-scroll";
 import { motion, useScroll, useInView, transform } from "framer-motion";
-import { skills, myData } from "../constants";
+import { skills } from "../constants";
 import { useRef } from "react";
 import SoftSkills from "./SoftSkills";
 import Links from "./Links"
 import Education from "./Education"
+import Skills from "./Skills";
 
 import OtherSkills from "./OtherSkills";
 import LanguagesKnown from "./Language";
@@ -56,10 +57,10 @@ const About = () => {
               <Education />
               </div>
           </div>
-          <div className="skills flex flex-col gap-4 bg-transparent ">
-            <div className="heading  text-white p-4 text-center text-xl sm:text-5xl [text-shadow:_0_0_50px_#ffffff]">
+          <div className="skills w-full min-h-screen flex flex-col gap-4  ">
+            <h2 className="heading text-white p-4 text-center text-xl sm:text-5xl [text-shadow:_0_0_50px_#ffffff]">
               My skills
-            </div>
+            </h2>
             <motion.div
               ref={techRef}
               variants={opacityVariant}
@@ -70,13 +71,13 @@ const About = () => {
               Technical Skills
             </motion.div>
             <hr />
-            <motion.div
+           {/* <motion.div
               variants={parentVariants}
               animate={isInView ? "visible" : "hidden"}
               ref={skillsRef}
               className="logos p-4 flex  justify-center  flex-wrap gap-6 sm:gap-10 bg-transparent w-full"
             >
-              {skills.map((ele, id) => (
+   {/* {skills.map((ele, id) => (
                 <motion.div
                   key={id}
                   variants={childVariants}
@@ -91,12 +92,13 @@ const About = () => {
                   className=" flex justify-center rounded-xl items-center  hover:shadow-[0_0_20px_5px_rgba(255,255,255,1)] bg-transparent"
                 >
                   <img
-                    className="bg-transparent"
+                    className="bg-transparent w-10"
                     src={`/assets/${ele.name}.svg`}
                   />
                 </motion.div>
-              ))}
-            </motion.div>
+              ))} */}
+            {/* </motion.div> */} 
+              <Skills/>
             <hr />
             <SoftSkills />
             <LanguagesKnown/>

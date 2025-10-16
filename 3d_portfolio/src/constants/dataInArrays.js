@@ -1,5 +1,5 @@
 
-import { myData } from "./";
+// import { myData } from "./";
 
 // Education data array
 export const educationData = [
