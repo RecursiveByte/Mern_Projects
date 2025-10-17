@@ -34,7 +34,8 @@ export const links = {
 
 export const skills = {
     programmingLanguages: [
-      { name: "Javascript" }, // or keep as "js"
+      { name: "Javascript" },
+        {name:"Typescript"},
       { name: "Python" },
       { name: "C" },
       { name: "C++" },
@@ -82,38 +83,6 @@ export const skills = {
     ],
   };
 
-// export const skills = [
-    // MERN Stack
-    // { name: "react" },
-    // { name: "expressjs" },
-    // { name: "nodejs" },
-    // { name: "mongodb" },
-    // 
-    // Other Frontend & Tools
-    // { name: "threejs" },
-    // { name: "tailwindcss" },
-    // { name: "redux" },
-    // { name: "vite" },
-    // { name: "git" },
-    // { name: "github" },
-    // { name: "mysql" },
-    // 
-    // Basics
-    // { name: "html" },
-    // { name: "css" },
-    // { name: "js" },
-    // {name:"framermotion"},
-//   
-    // Programming Languages
-    // { name: "c" },
-    // { name: "c++" },
-    // { name: "python" },
-//   ];
-
-// export const myData = {
-    // currentCpi:"7.61",
-    // myCurrentImgUrl:"n.png",
-// }
 
 
   
