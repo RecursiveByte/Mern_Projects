@@ -10,7 +10,7 @@ const Navitems = () => {
           return (
             <li key={ele.id} className='text-gray-400 hover:text-white'>
               <a 
-                href="https://drive.google.com/file/d/1aU7MjrgVxRA5rCz51jcf9Ar0292FwH53/view?usp=sharing" 
+                href="https://drive.google.com/file/d/1GB7Xv-jb8NF8H9FIgP6gveybw720ulMg/view?usp=sharing" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className='cursor-pointer'>
