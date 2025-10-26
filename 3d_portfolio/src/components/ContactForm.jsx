@@ -35,9 +35,8 @@ const ContactForm = () => {
   
   const onSubmit = (data) => {
     sendEmail();
-    console.log("Form submitted:", data);
 
-    reset(); // Clear form after submission
+    reset(); 
     alert("Message sent successfully!");
   };
 
@@ -46,11 +45,11 @@ const ContactForm = () => {
     variants={moveAtPlaceVariant}
     initial="hidden"
     animate="visible"
-    className="form flex flex-col text-white bg-transparent shadow-[0_0_20px_5px_rgba(255,255,255,1)] z-20 rounded-xl absolute sm:w-[40%] sm:ml-[10%] w-[90%]   min-h-screen   xl:min-h-0 h-[83%] lg:space-y-3  px-4  top-[10%]">
-      <div className="text-xl font-mono p-4">GET IN TOUCH</div>
+    className="form flex flex-col  text-white bg-transparent shadow-[0_0_20px_5px_rgba(255,255,255,1)] z-20 rounded-xl absolute sm:w-[40%] sm:ml-[10%] w-[90%]   min-h-screen   xl:min-h-0 h-[85%]   px-4 top-[10%]  ">
+      <div className="text-xl font-mono p-4 ">GET IN TOUCH</div>
       <h3 className="p-4 font-bold text-5xl">Contact Me.</h3>
       
-      <div className="px-2 pb-2 h-[50%] w-full">
+      <div className="px-2 pb-2  w-full">
         <form ref={formRef} onSubmit={handleSubmit(onSubmit)}>
           <div className="mb-4">
             <label htmlFor="name" className="block mb-2 font-medium">Your Name</label>

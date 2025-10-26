@@ -35,7 +35,7 @@ const Skills = () => {
                   alt={ele.name}
                   src={`/assets/${ele.name}.svg`}
                 ></img>
-                <p className="text-center text-3xl  text-white">{ele.name}</p>
+                <p className="text-left text-3xl  text-white">{ele.name}</p>
               </div>
             );
           })}
@@ -53,7 +53,7 @@ const Skills = () => {
                   alt={ele.name}
                   src={`/assets/${ele.name}.svg`}
                 ></img>
-                <p className="text-center text-3xl   text-white">{ele.name}</p>
+                <p className="text-left text-3xl   text-white">{ele.name}</p>
               </div>
             );
           })}
