@@ -53,6 +53,7 @@ export const skills = {
         { name: "Framer-motion" },
       ],
       backend: [
+          {name:"Spring-boot"},
         { name: "Nodejs" },
         { name: "Expressjs" },
         {name:"Sequelize"},
