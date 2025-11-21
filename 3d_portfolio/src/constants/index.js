@@ -34,6 +34,7 @@ export const links = {
 
 export const skills = {
     programmingLanguages: [
+        {name:"Java"},
       { name: "Javascript" },
         {name:"Typescript"},
       { name: "Python" },
