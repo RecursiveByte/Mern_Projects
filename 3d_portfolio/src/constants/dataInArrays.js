@@ -96,11 +96,11 @@ export const project = [
     projectDesc: "A full-stack book review platform with secure authentication, CRUD operations, and responsive design. Users can write, edit, and delete their own reviews while exploring community recommendations."
   },
   {
-    projectName: "Solar System",
-    projectImageUrl: "/assets/solar.png",
-    projectGithubLink: "https://github.com/RecursiveByte/SolarSystem/tree/main/solarSystem",
-    projectLink: "https://solarsystem-whd4.onrender.com",
-    projectDesc: "An interactive 2D solar system simulation built with React and Tailwind CSS, featuring animated planetary orbits and a clean, responsive interface for educational exploration."
+    projectName: "ISL-Vision",
+    projectImageUrl: "/assets/isl-vision.png",
+    projectGithubLink: "https://github.com/RecursiveByte/ISL-Vision",
+    projectLink: "https://isl-vision.onrender.com/",
+    projectDesc: "ISL-Vision is a real-time hand gesture recognition system that detects and predicts Indian Sign Language (ISL) using a webcam. It leverages a custom-trained Deep Neural Network (DNN) model to accurately interpret hand gestures and translate them into meaningful letters."
   },
   {
     projectName: "Password Manager",
