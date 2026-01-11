@@ -60,24 +60,6 @@ const Skills = () => {
         </div>
       </div>
 
-      {/* <div className="Database w-full xl:w-[22%] rounded-xl border-2 p-2 ">
-        <h3 className="text-4xl text-white">Database</h3>
-        <div>
-          {skills.development.database.map((ele, id) => {
-            return (
-              <div key={id} className="  flex flex-row gap-2 py-2 mt-1 ">
-                <img
-                  className="logo w-10"
-                  alt={ele.name}
-                  src={`/assets/${ele.name}.svg`}
-                ></img>
-                <p className="text-center text-3xl   text-white">{ele.name}</p>
-              </div>
-            );
-          })}
-        </div> */}
-      </div>
-
       <div className="programmingLanguages w-full  rounded  border-2 p-2">
         <h3 className="text-4xl text-white">Tools</h3>
         <div className="flex flex-row flex-wrap gap-4">
