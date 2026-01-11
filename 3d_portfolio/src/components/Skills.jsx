@@ -60,7 +60,7 @@ const Skills = () => {
         </div>
       </div>
 
-      <div className="Database w-full xl:w-[22%] rounded-xl border-2 p-2 ">
+      {/* <div className="Database w-full xl:w-[22%] rounded-xl border-2 p-2 ">
         <h3 className="text-4xl text-white">Database</h3>
         <div>
           {skills.development.database.map((ele, id) => {
@@ -75,7 +75,7 @@ const Skills = () => {
               </div>
             );
           })}
-        </div>
+        </div> */}
       </div>
 
       <div className="programmingLanguages w-full  rounded  border-2 p-2">
