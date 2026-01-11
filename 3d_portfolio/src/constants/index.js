@@ -59,22 +59,16 @@ export const skills = {
         {name:"Sequelize"},
         {name:"Fast-api"},
         {name:"Rest-api"},
-        {name:"Pandas"},
-        {name:"Numpy"},
-        {name:"Scikit-learn"},
-        {name:"Matplotlib"},
-      ],
-      database: [
         { name: "Mongodb" },
         { name: "Mysql" },
         {name:"Postgresql"}
-      ],
+      ]
     },
     tools: [
       { name: "Git" },
       { name: "Github" },
       {name:"Github-Copilot"},
-      { name: "Vite" },
+      // { name: "Vite" },
       {name:"Colab"},
       {name:"Jupyter"},
       {name:"VS-Code"},
